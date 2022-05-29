@@ -14,6 +14,17 @@
 		ECD9264928438FFC00144E1D /* MoneyManTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9264828438FFC00144E1D /* MoneyManTests.swift */; };
 		ECD9265328438FFC00144E1D /* MoneyManUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9265228438FFC00144E1D /* MoneyManUITests.swift */; };
 		ECD9265528438FFC00144E1D /* MoneyManUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9265428438FFC00144E1D /* MoneyManUITestsLaunchTests.swift */; };
+		ECD92663284390C600144E1D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = ECD92662284390C600144E1D /* Realm */; };
+		ECD92665284390C600144E1D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ECD92664284390C600144E1D /* RealmSwift */; };
+		ECD926682843926400144E1D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926672843926400144E1D /* Account.swift */; };
+		ECD9266A284392F900144E1D /* AccountsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD92669284392F900144E1D /* AccountsListView.swift */; };
+		ECD9266F28439CB200144E1D /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9266E28439CB200144E1D /* CreateAccountView.swift */; };
+		ECD9267128439EB300144E1D /* AccountCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9267028439EB300144E1D /* AccountCellView.swift */; };
+		ECD926742843A29300144E1D /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926732843A29300144E1D /* TransactionsListView.swift */; };
+		ECD926762843A29E00144E1D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926752843A29E00144E1D /* Transaction.swift */; };
+		ECD926782843A4A400144E1D /* CreateTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926772843A4A400144E1D /* CreateTransactionView.swift */; };
+		ECD9267A2843AC3200144E1D /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926792843AC3200144E1D /* AccountDetailView.swift */; };
+		ECD9267C2843AEDB00144E1D /* TransactionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9267B2843AEDB00144E1D /* TransactionCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,15 @@
 		ECD9264E28438FFC00144E1D /* MoneyManUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyManUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD9265228438FFC00144E1D /* MoneyManUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyManUITests.swift; sourceTree = "<group>"; };
 		ECD9265428438FFC00144E1D /* MoneyManUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyManUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ECD926672843926400144E1D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		ECD92669284392F900144E1D /* AccountsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListView.swift; sourceTree = "<group>"; };
+		ECD9266E28439CB200144E1D /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		ECD9267028439EB300144E1D /* AccountCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCellView.swift; sourceTree = "<group>"; };
+		ECD926732843A29300144E1D /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
+		ECD926752843A29E00144E1D /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		ECD926772843A4A400144E1D /* CreateTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionView.swift; sourceTree = "<group>"; };
+		ECD926792843AC3200144E1D /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
+		ECD9267B2843AEDB00144E1D /* TransactionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD92665284390C600144E1D /* RealmSwift in Frameworks */,
+				ECD92663284390C600144E1D /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +118,13 @@
 			children = (
 				ECD9263728438FFA00144E1D /* MoneyManApp.swift */,
 				ECD9263928438FFA00144E1D /* ContentView.swift */,
+				ECD926722843A27400144E1D /* TransactionsList */,
+				ECD926772843A4A400144E1D /* CreateTransactionView.swift */,
+				ECD9266B2843935400144E1D /* AccountsList */,
+				ECD9266E28439CB200144E1D /* CreateAccountView.swift */,
+				ECD9267E2843B1DF00144E1D /* AccountDetail */,
 				ECD9263B28438FFC00144E1D /* Assets.xcassets */,
+				ECD926662843925800144E1D /* Models */,
 				ECD9263D28438FFC00144E1D /* Preview Content */,
 			);
 			path = MoneyMan;
@@ -127,6 +155,57 @@
 			path = MoneyManUITests;
 			sourceTree = "<group>";
 		};
+		ECD926662843925800144E1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECD926672843926400144E1D /* Account.swift */,
+				ECD926752843A29E00144E1D /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ECD9266B2843935400144E1D /* AccountsList */ = {
+			isa = PBXGroup;
+			children = (
+				ECD9267D2843B1CA00144E1D /* Views */,
+				ECD92669284392F900144E1D /* AccountsListView.swift */,
+			);
+			path = AccountsList;
+			sourceTree = "<group>";
+		};
+		ECD926722843A27400144E1D /* TransactionsList */ = {
+			isa = PBXGroup;
+			children = (
+				ECD9267F2843B1EA00144E1D /* Views */,
+				ECD926732843A29300144E1D /* TransactionsListView.swift */,
+			);
+			path = TransactionsList;
+			sourceTree = "<group>";
+		};
+		ECD9267D2843B1CA00144E1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECD9267028439EB300144E1D /* AccountCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ECD9267E2843B1DF00144E1D /* AccountDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ECD926792843AC3200144E1D /* AccountDetailView.swift */,
+			);
+			path = AccountDetail;
+			sourceTree = "<group>";
+		};
+		ECD9267F2843B1EA00144E1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECD9267B2843AEDB00144E1D /* TransactionCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +222,10 @@
 			dependencies = (
 			);
 			name = MoneyMan;
+			packageProductDependencies = (
+				ECD92662284390C600144E1D /* Realm */,
+				ECD92664284390C600144E1D /* RealmSwift */,
+			);
 			productName = MoneyMan;
 			productReference = ECD9263428438FFA00144E1D /* MoneyMan.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +298,9 @@
 				Base,
 			);
 			mainGroup = ECD9262B28438FF900144E1D;
+			packageReferences = (
+				ECD92661284390C600144E1D /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = ECD9263528438FFA00144E1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +343,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD9266A284392F900144E1D /* AccountsListView.swift in Sources */,
+				ECD926782843A4A400144E1D /* CreateTransactionView.swift in Sources */,
+				ECD926742843A29300144E1D /* TransactionsListView.swift in Sources */,
+				ECD9267A2843AC3200144E1D /* AccountDetailView.swift in Sources */,
+				ECD926762843A29E00144E1D /* Transaction.swift in Sources */,
 				ECD9263A28438FFA00144E1D /* ContentView.swift in Sources */,
+				ECD9267128439EB300144E1D /* AccountCellView.swift in Sources */,
 				ECD9263828438FFA00144E1D /* MoneyManApp.swift in Sources */,
+				ECD926682843926400144E1D /* Account.swift in Sources */,
+				ECD9266F28439CB200144E1D /* CreateAccountView.swift in Sources */,
+				ECD9267C2843AEDB00144E1D /* TransactionCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +678,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECD92661284390C600144E1D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECD92662284390C600144E1D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECD92661284390C600144E1D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		ECD92664284390C600144E1D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECD92661284390C600144E1D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECD9262C28438FF900144E1D /* Project object */;
 }
