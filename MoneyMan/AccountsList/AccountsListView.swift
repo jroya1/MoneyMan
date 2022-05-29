@@ -32,6 +32,7 @@ struct AccountsListView: View {
                     }
                 }
             }
+            .navigationTitle("Accounts")
         }
     }
 }

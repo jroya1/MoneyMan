@@ -26,6 +26,7 @@ struct TransactionsListView: View {
                     }
                 }
             }
+            .navigationTitle("Transactions")
         }
     }
 }
