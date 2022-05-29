@@ -24,13 +24,22 @@ struct CreateTransactionView: View {
             TextField("Name", text: $name)
             TextField("Amount", text: $amount)
 
-            ForEach(accounts) { account in
-                Button {
-                    selectedAccount = account
-                } label: {
-                    Text(account.name)
+            Section("Account") {
+                ForEach(accounts) { account in
+                    Button {
+                        selectedAccount = account
+                    } label: {
+                        HStack {
+                            Text(account.name)
+                            Spacer()
+                            if account == selectedAccount {
+                                Image(systemName: "checkmark")
+                            }
+                        }
+                    }
                 }
             }
+
             Button {
                 let realm = try! Realm()
                 guard let account = selectedAccount?.thaw() else {
