@@ -35,7 +35,7 @@ struct AccountDetailView_Previews: PreviewProvider {
     static let mockAccount: Account = {
         let account = Account()
         account.name = "Mock account"
-        account.amount = 2799
+        account.baseAmount = 2799
         return account
     }()
 }
