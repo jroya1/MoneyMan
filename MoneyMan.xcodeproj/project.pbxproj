@@ -26,7 +26,6 @@
 		ECD9267A2843AC3200144E1D /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926792843AC3200144E1D /* AccountDetailView.swift */; };
 		ECD9267C2843AEDB00144E1D /* TransactionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9267B2843AEDB00144E1D /* TransactionCellView.swift */; };
 		ECD926812844E92900144E1D /* TransactionListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926802844E92900144E1D /* TransactionListModel.swift */; };
-		ECD9268428464C3900144E1D /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = ECD9268328464C3900144E1D /* SwiftUICharts */; };
 		ECD926862846511500144E1D /* AccountChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926852846511500144E1D /* AccountChartView.swift */; };
 		ECD9268928466C7D00144E1D /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9268828466C7D00144E1D /* Color+hex.swift */; };
 		ECD9268C28466CD300144E1D /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9268B28466CD300144E1D /* Gradients.swift */; };
@@ -80,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD9268428464C3900144E1D /* SwiftUICharts in Frameworks */,
 				ECD92665284390C600144E1D /* RealmSwift in Frameworks */,
 				ECD92663284390C600144E1D /* Realm in Frameworks */,
 			);
@@ -255,7 +253,6 @@
 			packageProductDependencies = (
 				ECD92662284390C600144E1D /* Realm */,
 				ECD92664284390C600144E1D /* RealmSwift */,
-				ECD9268328464C3900144E1D /* SwiftUICharts */,
 			);
 			productName = MoneyMan;
 			productReference = ECD9263428438FFA00144E1D /* MoneyMan.app */;
@@ -331,7 +328,6 @@
 			mainGroup = ECD9262B28438FF900144E1D;
 			packageReferences = (
 				ECD92661284390C600144E1D /* XCRemoteSwiftPackageReference "realm-swift" */,
-				ECD9268228464C3800144E1D /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = ECD9263528438FFA00144E1D /* Products */;
 			projectDirPath = "";
@@ -724,14 +720,6 @@
 				kind = branch;
 			};
 		};
-		ECD9268228464C3800144E1D /* XCRemoteSwiftPackageReference "ChartView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppPear/ChartView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -744,11 +732,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ECD92661284390C600144E1D /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
-		};
-		ECD9268328464C3900144E1D /* SwiftUICharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ECD9268228464C3800144E1D /* XCRemoteSwiftPackageReference "ChartView" */;
-			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
