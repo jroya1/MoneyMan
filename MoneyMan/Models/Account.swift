@@ -13,6 +13,7 @@ class Account: Object, ObjectKeyIdentifiable {
 
     @Persisted var name: String = ""
     @Persisted var baseAmount = 0
+    @Persisted var style = 0
     
     @Persisted var transactions = RealmSwift.List<Transaction>()
 }

@@ -26,6 +26,10 @@
 		ECD9267A2843AC3200144E1D /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926792843AC3200144E1D /* AccountDetailView.swift */; };
 		ECD9267C2843AEDB00144E1D /* TransactionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9267B2843AEDB00144E1D /* TransactionCellView.swift */; };
 		ECD926812844E92900144E1D /* TransactionListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926802844E92900144E1D /* TransactionListModel.swift */; };
+		ECD9268428464C3900144E1D /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = ECD9268328464C3900144E1D /* SwiftUICharts */; };
+		ECD926862846511500144E1D /* AccountChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926852846511500144E1D /* AccountChartView.swift */; };
+		ECD9268928466C7D00144E1D /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9268828466C7D00144E1D /* Color+hex.swift */; };
+		ECD9268C28466CD300144E1D /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9268B28466CD300144E1D /* Gradients.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,9 @@
 		ECD926792843AC3200144E1D /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
 		ECD9267B2843AEDB00144E1D /* TransactionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellView.swift; sourceTree = "<group>"; };
 		ECD926802844E92900144E1D /* TransactionListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListModel.swift; sourceTree = "<group>"; };
+		ECD926852846511500144E1D /* AccountChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountChartView.swift; sourceTree = "<group>"; };
+		ECD9268828466C7D00144E1D /* Color+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
+		ECD9268B28466CD300144E1D /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD9268428464C3900144E1D /* SwiftUICharts in Frameworks */,
 				ECD92665284390C600144E1D /* RealmSwift in Frameworks */,
 				ECD92663284390C600144E1D /* Realm in Frameworks */,
 			);
@@ -127,6 +135,8 @@
 				ECD9267E2843B1DF00144E1D /* AccountDetail */,
 				ECD9263B28438FFC00144E1D /* Assets.xcassets */,
 				ECD926662843925800144E1D /* Models */,
+				ECD9268A28466CC100144E1D /* Helpers */,
+				ECD9268728466C5C00144E1D /* Extensions */,
 				ECD9263D28438FFC00144E1D /* Preview Content */,
 			);
 			path = MoneyMan;
@@ -189,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				ECD9267028439EB300144E1D /* AccountCellView.swift */,
+				ECD926852846511500144E1D /* AccountChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +218,22 @@
 				ECD9267B2843AEDB00144E1D /* TransactionCellView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ECD9268728466C5C00144E1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ECD9268828466C7D00144E1D /* Color+hex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ECD9268A28466CC100144E1D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ECD9268B28466CD300144E1D /* Gradients.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +255,7 @@
 			packageProductDependencies = (
 				ECD92662284390C600144E1D /* Realm */,
 				ECD92664284390C600144E1D /* RealmSwift */,
+				ECD9268328464C3900144E1D /* SwiftUICharts */,
 			);
 			productName = MoneyMan;
 			productReference = ECD9263428438FFA00144E1D /* MoneyMan.app */;
@@ -303,6 +331,7 @@
 			mainGroup = ECD9262B28438FF900144E1D;
 			packageReferences = (
 				ECD92661284390C600144E1D /* XCRemoteSwiftPackageReference "realm-swift" */,
+				ECD9268228464C3800144E1D /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = ECD9263528438FFA00144E1D /* Products */;
 			projectDirPath = "";
@@ -347,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD9266A284392F900144E1D /* AccountsListView.swift in Sources */,
+				ECD926862846511500144E1D /* AccountChartView.swift in Sources */,
 				ECD926782843A4A400144E1D /* CreateTransactionView.swift in Sources */,
 				ECD926742843A29300144E1D /* TransactionsListView.swift in Sources */,
 				ECD9267A2843AC3200144E1D /* AccountDetailView.swift in Sources */,
@@ -356,8 +386,10 @@
 				ECD9263828438FFA00144E1D /* MoneyManApp.swift in Sources */,
 				ECD926812844E92900144E1D /* TransactionListModel.swift in Sources */,
 				ECD926682843926400144E1D /* Account.swift in Sources */,
+				ECD9268C28466CD300144E1D /* Gradients.swift in Sources */,
 				ECD9266F28439CB200144E1D /* CreateAccountView.swift in Sources */,
 				ECD9267C2843AEDB00144E1D /* TransactionCellView.swift in Sources */,
+				ECD9268928466C7D00144E1D /* Color+hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +724,14 @@
 				kind = branch;
 			};
 		};
+		ECD9268228464C3800144E1D /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -704,6 +744,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ECD92661284390C600144E1D /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		ECD9268328464C3900144E1D /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECD9268228464C3800144E1D /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

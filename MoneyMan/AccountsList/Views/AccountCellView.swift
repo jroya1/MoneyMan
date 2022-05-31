@@ -12,17 +12,34 @@ struct AccountCellView: View {
     var account: Account
 
     var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                Text(account.name)
-                    .font(.headline)
-                Text("This is a demo description")
-                    .font(.caption)
+        ZStack {
+            Gradients.all[account.style]
+            VStack {
+                VStack {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(account.name)
+                                .font(.headline)
+                                .foregroundColor(.white)
+                            Text("This is a demo description")
+                                .font(.caption)
+                                .foregroundColor(.white)
+                        }
+                        Spacer()
+                        Text(account.displayValue)
+                            .font(.title)
+                            .foregroundColor(.white)
+                    }
+                }
+                    .padding([.top, .leading, .trailing])
+                if (!account.transactions.isEmpty) {
+                    AccountChartView(account: account)
+                } else {
+                    Spacer()
+                }
             }
-            Spacer()
-            Text(account.displayValue)
-                .font(.title)
-        }.padding()
+        }
+        .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
     }
 }
 

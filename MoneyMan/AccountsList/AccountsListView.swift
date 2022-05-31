@@ -20,8 +20,9 @@ struct AccountsListView: View {
                         NavigationLink {
                             AccountDetailView(account: account)
                         } label: {
-                            AccountCellView(account: account)
                         }
+                        .listRowBackground(AccountCellView(account: account))
+                        .frame(height: 180.0)
                     }
                 }
                 Section {

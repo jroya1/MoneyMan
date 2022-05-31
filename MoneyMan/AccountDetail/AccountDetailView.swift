@@ -16,11 +16,11 @@ struct AccountDetailView: View {
         List {
             Section {
                 AccountCellView(account: account)
+                .frame(height: 180.0)
             }
             Section("Transactions") {
                 ForEach(account.transactions) { transaction in
                     TransactionCellView(transaction: transaction)
-
                 }
             }
         }
