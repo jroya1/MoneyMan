@@ -25,6 +25,7 @@
 		ECD926782843A4A400144E1D /* CreateTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926772843A4A400144E1D /* CreateTransactionView.swift */; };
 		ECD9267A2843AC3200144E1D /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926792843AC3200144E1D /* AccountDetailView.swift */; };
 		ECD9267C2843AEDB00144E1D /* TransactionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD9267B2843AEDB00144E1D /* TransactionCellView.swift */; };
+		ECD926812844E92900144E1D /* TransactionListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD926802844E92900144E1D /* TransactionListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		ECD926772843A4A400144E1D /* CreateTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionView.swift; sourceTree = "<group>"; };
 		ECD926792843AC3200144E1D /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
 		ECD9267B2843AEDB00144E1D /* TransactionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellView.swift; sourceTree = "<group>"; };
+		ECD926802844E92900144E1D /* TransactionListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			children = (
 				ECD9267F2843B1EA00144E1D /* Views */,
 				ECD926732843A29300144E1D /* TransactionsListView.swift */,
+				ECD926802844E92900144E1D /* TransactionListModel.swift */,
 			);
 			path = TransactionsList;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				ECD9263A28438FFA00144E1D /* ContentView.swift in Sources */,
 				ECD9267128439EB300144E1D /* AccountCellView.swift in Sources */,
 				ECD9263828438FFA00144E1D /* MoneyManApp.swift in Sources */,
+				ECD926812844E92900144E1D /* TransactionListModel.swift in Sources */,
 				ECD926682843926400144E1D /* Account.swift in Sources */,
 				ECD9266F28439CB200144E1D /* CreateAccountView.swift in Sources */,
 				ECD9267C2843AEDB00144E1D /* TransactionCellView.swift in Sources */,

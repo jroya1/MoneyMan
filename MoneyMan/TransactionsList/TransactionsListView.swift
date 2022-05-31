@@ -10,13 +10,17 @@ import RealmSwift
 
 struct TransactionsListView: View {
 
-    @ObservedResults(Transaction.self) var transactions
+    @ObservedObject var model = TransactionListModel()
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(transactions) { transaction in
-                        TransactionCellView(transaction: transaction)
+                ForEach(model.groupedTransactions, id: \.self) { group in
+                    Section(model.format(date: group.first!.date)) {
+                        ForEach(group) { transaction in
+                            TransactionCellView(transaction: transaction)
+                        }
+                    }
                 }
                 Section {
                     NavigationLink {

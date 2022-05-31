@@ -11,6 +11,12 @@ struct TransactionCellView: View {
 
     var transaction: Transaction
 
+    var date: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:MM"
+        return dateFormatter.string(from: transaction.date)
+    }
+
     var body: some View {
         HStack {
             Text(transaction.name)
